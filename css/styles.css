@@ -64,3 +64,26 @@ body {
     display: flex; 
 }
 */
+
+.contenedor__titulo{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contenedor__superior{
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff;
+}
+
+.aditamentos{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
