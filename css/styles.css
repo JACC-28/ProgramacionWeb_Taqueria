@@ -1,3 +1,65 @@
+/*Colores provisionales*/
+
 body {
-    
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
+
+.columna__uno{
+    display: flex;
+    justify-content: space-between;
+}
+
+.columna__dos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.elemento{
+    background-color: darkorange;
+    margin: 10px;
+    padding: 20px;
+    width: 30%;
+}
+
+.contenedor__header{
+    margin: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu {
+    width: 200px; 
+    background-color: #ffffff; 
+    padding: 15px;
+    margin-right: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.menu ul {
+    list-style: none; 
+    padding: 0; 
+}
+
+.menu li {
+    margin: 10px 0; 
+}
+
+.menu a {
+    text-decoration: none; 
+    color: #333; 
+}
+
+.menu a:hover {
+    color: #007bff; 
+}
+
+/* Falta alinear bien el menu a la izquierda
+.contenedor__main {
+    display: flex; 
+}
+*/
