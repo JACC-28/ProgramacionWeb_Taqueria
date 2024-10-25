@@ -5,36 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Taqueria ITO</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
-    <!-- Encabezado principal -->
     <header>
         <div class="header__contenedor">
-            <!-- Logo -->
+       
             <div class="logo">
                 <img src="img/1.png" alt="logo" class="logo-img">
             </div>
-            
-            <!-- Barra de búsqueda -->
+    
             <div class="search-bar">
                 <input type="text" placeholder="Buscar Productos...">
             </div>
             
-            <!-- Íconos de usuario y carrito -->
             <div class="icons">
                 <div class="user-icon">
-                    <img src="img/user.png" alt="Usuario">
+                    <i class="fas fa-user"></i>
                     <span>Iniciar Sesión</span>
                 </div>
                 <div class="cart-icon">
-                    <img src="img/cart.png" alt="Carrito">
+                    <i class="fas fa-shopping-cart"></i>
                     <span>Carrito</span>
                 </div>
             </div>
         </div>
 
-        <!-- Menú de navegación -->
         <nav class="nav">
             <ul>
                 <li><a href="#">Inicio</a></li>
@@ -45,57 +42,60 @@
         </nav>
     </header>
 
-    <!-- Banner de inicio -->
     <section class="banner">
-        <img src="img/banner.png" alt="Banner Principal">
+        <div class="banner-content">
+            <h1>Bienvenido a Taquería ITO</h1>
+            <p>¡Deliciosos tacos preparados al momento para ti!</p>
+            <button>Ordenar Ahora</button>
+        </div>
     </section>
 
-    <!-- Contenido principal -->
     <main>
        <div class="contenedor__main">
-            <!-- Menú lateral -->
+            
             <div class="menu">
                 <ul>
-                    <li><a href="#">Seccion1</a></li>
-                    <li><a href="#">Seccion2</a></li>
-                    <li><a href="#">Seccion3</a></li>
-                    <li><a href="#">Seccion4</a></li>
+                    <li><a href="#">Metodo De Pago</a></li>
+                    <li><a href="#">Compras</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Carrito</a></li>
                 </ul>
             </div>
             
-            <!-- Columnas de contenido -->
-            <div class="columna__uno">
-                <div class="elemento">
-                    <h2>Tacos al pastor</h2>
-                    <img src="#" alt="imagenTipo1">
-                    <ul>
-                        <li>Pastor</li>
-                        <li>Piña</li>
-                        <li>Cebolla</li>
-                        <li>Cilantro</li>
-                    </ul>
-                    <button>Agregar</button>
-                </div>
-                <div class="elemento">
-                    <h2>Tacos de asada</h2>
-                    <img src="#" alt="imagenTipo2">
-                    <ul>
-                        <li>Asada de res</li>
-                        <li>Cebolla</li>
-                        <li>Cilantro</li>
-                    </ul>
-                    <button>Agregar</button>
-                </div>
-    
-                <div class="elemento">
-                    <h2>Tacos de arrachera</h2>
-                    <img src="#" alt="imagenTipo3">
-                    <ul>
-                        <li>Arrachera</li>
-                        <li>Cebolla</li>
-                        <li>Cilantro</li>
-                    </ul>
-                    <button>Agregar</button>
+            <div class="columnas">
+                <div class="columna">
+                    <div class="elemento">
+                        <h2>Tacos al pastor</h2>
+                        <img src="img/pastor.jpeg" alt="imagenTipo1">
+                        <ul>
+                            <li>Pastor</li>
+                            <li>Piña</li>
+                            <li>Cebolla</li>
+                            <li>Cilantro</li>
+                        </ul>
+                        <button>Agregar</button>
+                    </div>
+                    <div class="elemento">
+                        <h2>Tacos de asada</h2>
+                        <img src="img/asada.jpeg" alt="imagenTipo2">
+                        <ul>
+                            <li>Asada de res</li>
+                            <li>Cebolla</li>
+                            <li>Cilantro</li>
+                        </ul>
+                        <button>Agregar</button>
+                    </div>
+        
+                    <div class="elemento">
+                        <h2>Tacos de arrachera</h2>
+                        <img src="img/arrachera.jpg" alt="imagenTipo3">
+                        <ul>
+                            <li>Arrachera</li>
+                            <li>Cebolla</li>
+                            <li>Cilantro</li>
+                        </ul>
+                        <button>Agregar</button>
+                    </div>
                 </div>
             </div>
        </div>

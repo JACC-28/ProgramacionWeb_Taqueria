@@ -9,7 +9,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Encabezado */
 .header__contenedor {
     display: flex;
     justify-content: space-between;
@@ -38,11 +37,18 @@ body {
     margin-left: 15px;
     display: flex;
     align-items: center;
+    color: #333;
+    font-size: 16px;
 }
 
-.user-icon img, .cart-icon img {
-    width: 25px;
+.user-icon i, .cart-icon i {
+    font-size: 20px;
     margin-right: 5px;
+}
+
+.user-icon:hover, .cart-icon:hover {
+    color: #007bff;
+    cursor: pointer;
 }
 
 .nav {
@@ -82,13 +88,53 @@ body {
     color: #fff;
 }
 
-/* Banner */
-.banner img {
-    width: 100%;
-    height: auto;
+.banner {
+    position: relative;
+    background: url("img/banner.png") no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
 }
 
-/* Menú lateral */
+.banner-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.banner-content h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.banner-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.banner-content button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ffcc80;
+    border: none;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+}
+
+.banner-content button:hover {
+    background-color: #ffb74d;
+}
+
+
+.contenedor__main {
+    display: flex;
+    margin: 20px;
+}
+
 .menu {
     width: 200px;
     background-color: #ffffff;
@@ -116,17 +162,23 @@ body {
     color: #007bff;
 }
 
-/* Columnas y elementos */
-.columna__uno {
+.columnas {
+    flex-grow: 1;
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.columna {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .elemento {
     background-color: #ffcc80;
     margin: 10px;
     padding: 20px;
-    width: 30%;
     border-radius: 10px;
     text-align: center;
 }
