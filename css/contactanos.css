@@ -1,0 +1,144 @@
+/* Variables */
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+    --white: #FFFFFF;
+}
+
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background-color: var(--light);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.navbar-brand .logo {
+    color: var(--primary);
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo i {
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+/* Sección */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--dark);
+}
+
+/* Contacto */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--dark);
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 50px 0;
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .footer-cols {
+        flex-direction: column;
+    }
+    .footer-cols .col {
+        margin-bottom: 20px;
+    }
+}
