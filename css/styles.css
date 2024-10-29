@@ -1,212 +1,99 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
-.header__contenedor {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background-color: #f8f9fa;
-}
-
-.logo-img {
-    width: 120px;
-}
-
-.search-bar input {
-    width: 300px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.icons {
-    display: flex;
-    align-items: center;
-}
-
-.user-icon, .cart-icon {
-    margin-left: 15px;
-    display: flex;
-    align-items: center;
-    color: #333;
-    font-size: 16px;
-}
-
-.user-icon i, .cart-icon i {
-    font-size: 20px;
-    margin-right: 5px;
-}
-
-.user-icon:hover, .cart-icon:hover {
-    color: #007bff;
-    cursor: pointer;
-}
-
-.nav {
-    background-color: #f1f1f1;
-    padding: 10px 20px;
-    text-align: center;
-}
-
-.nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-}
-
-.nav ul li {
-    margin: 0 15px;
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-}
-
-.nav ul li a:hover {
-    color: #007bff;
-}
-
-.highlight {
-    background-color: #d9534f;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-.highlight a {
-    color: #fff;
-}
-
-.banner {
-    position: relative;
-    background: url("img/banner.png") no-repeat center center/cover;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.contenedor {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #000;
     color: white;
-    text-align: center;
-}
-
-.banner-content {
-    background: rgba(0, 0, 0, 0.5);
-    padding: 20px 30px;
     border-radius: 10px;
 }
 
-.banner-content h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+header {
+    padding: 20px 0;
 }
 
-.banner-content p {
-    font-size: 18px;
-    margin-bottom: 15px;
-}
-
-.banner-content button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #ffcc80;
-    border: none;
-    border-radius: 5px;
-    color: #333;
-    cursor: pointer;
-}
-
-.banner-content button:hover {
-    background-color: #ffb74d;
-}
-
-
-.contenedor__main {
+.encabezado-contenedor {
     display: flex;
-    margin: 20px;
+    align-items: center;
 }
 
-.menu {
+.foto-perfil {
+    border-radius: 50%;
     width: 200px;
-    background-color: #ffffff;
-    padding: 15px;
-    margin-right: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    object-fit: cover;
+    margin-right: 30px;
+    border: 3px solid #3498db;
 }
 
-.menu ul {
-    list-style: none;
-    padding: 0;
+.encabezado-texto h1 {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: 300;
+    color: #3498db;
 }
 
-.menu li {
-    margin: 10px 0;
+.encabezado-texto p {
+    margin: 5px 0;
+    font-size: 1.2em;
 }
 
-.menu a {
-    text-decoration: none;
-    color: #333;
-}
-
-.menu a:hover {
-    color: #007bff;
-}
-
-.columnas {
-    flex-grow: 1;
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-.columna {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+.portafolio {
+    margin: 40px 0;
 }
 
 .elemento {
-    background-color: #ffcc80;
-    margin: 10px;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
+    background-color: #1a1a1a;
+    margin: 15px 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+    transition: transform 0.2s;
 }
 
-.elemento h2 {
-    color: #333;
+.elemento:hover {
+    transform: translateY(-5px);
 }
 
 .elemento img {
-    width: 100px;
-    height: 100px;
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
-.elemento ul {
-    list-style: none;
-    padding: 0;
-}
-
-.elemento button {
-    margin-top: 10px;
-    padding: 10px 15px;
-    background-color: #007bff;
+.elemento h2 {
+    margin: 0;
+    padding: 15px;
+    font-size: 1.5em;
+    background-color: #3498db;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    text-align: center;
 }
 
-.elemento button:hover {
-    background-color: #0056b3;
+.elemento a {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    .encabezado-contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        margin: 0 0 20px 0;
+    }
 }
