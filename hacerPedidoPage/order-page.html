@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenar taquITOs</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/taquitos_logo_nobg.png"
+         alt="Logo de la Taquería">
+        </div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Sucursales</a>
+            <a href="#">Ordenar ahora</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categories">
+            <div class="category">
+                <div class="vertical-text">Los MataHambre</div>
+                <ul class="products">
+                    <li>
+                        <img src="images/tacos_pastor.jpg" alt="Tacos" class="product-img">
+                        <p>Tacos</p>
+                    </li>
+                    <li>
+                        <img src="images/tortas.jpg" alt="Tortas" class="product-img">
+                        <p>Tortas</p>
+                    </li>
+                    <li>
+                        <img src="images/alambres.jpg" alt="Alambres" class="product-img">
+                        <p>Alambres</p>
+                    </li>
+                </ul>
+                <!-- Formulario de personalización -->
+                <div class="customization-form">
+                    <h4>Personaliza tu pedido</h4>
+                    <form>
+                        <label for="quantity">Cantidad:</label>
+                        <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="cebolla"> ¿Cebolla?</label>
+                            <label><input type="checkbox" name="cilantro"> ¿Cilantro?</label>
+                            <label><input type="checkbox" name="guacamole"> ¿Guacamole?</label>
+                        </div>
+
+                        <button type="button">Agregar al carrito</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="category">
+                <div class="vertical-text">El Oasis</div>
+                <ul class="products">
+                    <li>
+                        <img src="images/refrescos.jpeg" alt="Refrescos" class="product-img">
+                        <p>Refrescos</p>
+                    </li>
+                    <li>
+                        <img src="images/aguas_frescas.jpg" alt="Aguas Frescas" class="product-img">
+                        <p>Aguas Frescas</p>
+                    </li>
+                    <li>
+                        <img src="images/agua_natural.jpeg" alt="Agua Natural" class="product-img">
+                        <p>Agua Natural</p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="category">
+                <div class="vertical-text">El Broche de Oro</div>
+                <ul class="products">
+                    <li>
+                        <img src="images/arrozconleche.jpg" alt="Arroz con Leche" class="product-img">
+                        <p>Arroz con Leche</p>
+                    </li>
+                    <li>
+                        <img src="images/flan.jpg" alt="Flan Napolitano" class="product-img">
+                        <p>Flan Napolitano</p>
+                    </li>
+                    <li>
+                        <img src="images/cheesecake.jpg" alt="Cheesecake" class="product-img">
+                        <p>Cheesecake</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

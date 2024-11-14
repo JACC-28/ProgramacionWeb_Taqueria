@@ -1,0 +1,130 @@
+/* General styles */
+@font-face {
+    font-family: 'HeaderFont';
+    src: url('../fonts/artesania_font.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CategoryFont';
+    src: url('../fonts/mezcal.otf') format('truetype');
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: url('../images/bg_header.jpg') no-repeat center;
+    background-size: cover;
+    padding: 1rem;
+    color: white;
+}
+
+header nav a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+    font-family: 'HeaderFont', sans-serif;
+}
+
+.logo img {
+    width: 100px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.categories {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.category {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    background-color: #290f00;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.vertical-text {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    text-orientation: mixed;
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    font-family: 'CategoryFont', sans-serif;
+    margin-right: 20px;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 0;
+    color: #ffffff;
+}
+
+.products li {
+    margin: 1rem 0;
+    text-align: center;
+}
+
+.product-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ddd;
+}
+
+/* Formulario de personalización */
+.customization-form {
+    background-color: #fff;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    width: 200px;
+}
+
+.customization-form h4 {
+    margin-top: 0;
+    font-family: 'CategoryFont', sans-serif;
+}
+
+.customization-form label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.checkbox-group {
+    margin-top: 1rem;
+}
+
+.customization-form button {
+    margin-top: 1rem;
+    background-color: #28a745;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+}
