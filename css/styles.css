@@ -1,0 +1,259 @@
+/* Variables */
+:root {
+    --primary: #FEA116;
+    --light: #F1F8FF;
+    --dark: #0F172B;
+    --white: #FFFFFF;
+}
+
+/* Estilos globales */
+body {
+    margin: 0;
+    font-family: 'Heebo', sans-serif;
+    background-color: var(--light);
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+.navbar {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 20px 0;
+}
+
+.navbar-brand .logo {
+    color: var(--primary);
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo i {
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: var(--white);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('../imagenes/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: 100px 0;
+}
+
+.hero::before {
+    content: '';
+    background-color: rgba(15, 23, 43, 0.7);
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.hero .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hero-content {
+    max-width: 50%;
+    color: var(--white);
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    margin-bottom: 30px;
+}
+
+.hero-content .btn-primary {
+    padding: 15px 30px;
+}
+
+.hero-image img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+/* Sección */
+.section {
+    padding: 60px 0;
+}
+
+.section h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--dark);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--dark);
+    color: var(--white);
+    padding: 50px 0;
+}
+
+.footer-cols {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.footer-cols .col {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer h4 {
+    font-family: 'Pacifico', cursive;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer p {
+    margin-bottom: 10px;
+}
+
+.social-icons a {
+    color: var(--white);
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.footer form {
+    display: flex;
+    margin-top: 10px;
+}
+
+.footer input[type="email"] {
+    padding: 10px;
+    flex: 1;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.footer button {
+    padding: 10px;
+    background-color: var(--primary);
+    border: none;
+    color: var(--white);
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-menu {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.footer-menu a {
+    color: var(--white);
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .hero .container {
+        flex-direction: column;
+    }
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 36px;
+    }
+    .hero-image {
+        margin-top: 20px;
+    }
+    .footer-cols {
+        flex-direction: column;
+    }
+    .footer-cols .col {
+        margin-bottom: 20px;
+    }
+}
