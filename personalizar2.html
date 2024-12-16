@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Taco - Taquería Goku</title>
+    <link rel="stylesheet" href="css/personalizar.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="menu.html" class="btn btn-primary">Volver al Menú</a>
+            </nav>
+        </header>
+        <section>
+            <h1>Personaliza tu Taco</h1>
+            <div class="customization">
+                <div class="taco-preview">
+                    <img src="imagenes/taco_base.png" id="taco-base" alt="Base del taco">
+                    <img src="imagenes/carne.png" id="taco-carne" class="taco-ingredient hidden" alt="Carne Asada">
+                    <img src="imagenes/cebolla.png" id="taco-cebolla" class="taco-ingredient hidden" alt="Cebolla">
+                    <img src="imagenes/cilantro.png" id="taco-cilantro" class="taco-ingredient hidden" alt="Cilantro">
+                    <img src="imagenes/vegetales.png" id="taco-vegetales" class="taco-ingredient hidden" alt="Vegetales">
+                    <img src="imagenes/salsa.png" id="taco-salsa" class="taco-ingredient hidden" alt="Salsa Picante">
+                </div>
+                <form id="taco-form">
+                    <label for="carne">Cantidad de Carne Asada:</label>
+                    <input type="range" id="carne" name="carne" min="0" max="5" value="2">
+
+                    <label for="cebolla">Cantidad de Cebolla:</label>
+                    <input type="range" id="cebolla" name="cebolla" min="0" max="5" value="3">
+
+                    <label for="cilantro">Cantidad de Cilantro:</label>
+                    <input type="range" id="cilantro" name="cilantro" min="0" max="5" value="2">
+
+                    <label for="vegetales">Cantidad de Vegetales:</label>
+                    <input type="range" id="vegetales" name="vegetales" min="0" max="5" value="2">
+
+                    <label for="salsa">Cantidad de Salsa Picante:</label>
+                    <input type="range" id="salsa" name="salsa" min="0" max="5" value="2">
+
+                    <button type="button" id="preview-button">Vista Previa</button>
+                    <button type="button" id="finalize-button">Listo</button> 
+                </form>
+            </div>
+
+            <!-- Contenedor del pedido final -->
+            <div id="pedido-final" class="hidden">
+                <h2>Pedido Finalizado</h2>
+                <p id="pedido-detalle"></p>
+            </div>
+        </section>
+        <script src="js/personalizar.js"></script>
+    </div>
+</body>
+</html>

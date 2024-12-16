@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Taco - Taquería Goku</title>
+    <link rel="stylesheet" href="css/personalizar.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="menu.html" class="btn btn-primary">Volver al Menú</a>
+            </nav>
+        </header>
+        <section>
+            <h1>Personaliza tu Taco</h1>
+            <div class="customization">
+                <div class="taco-preview">
+                    <img src="imagenes/taco_base.png" id="taco-image" alt="Vista previa del taco">
+                </div>
+                <form id="taco-form">
+                    <label for="carne">Cantidad de Carne:</label>
+                    <input type="range" id="carne" name="carne" min="0" max="5" value="2">
+                    <label for="cebolla">Cantidad de Cebolla:</label>
+                    <input type="range" id="cebolla" name="cebolla" min="0" max="5" value="3">
+                    <label for="cilantro">Cantidad de Cilantro:</label>
+                    <input type="range" id="cilantro" name="cilantro" min="0" max="5" value="2">
+                    <label for="piña">Cantidad de Piña:</label>
+                    <input type="range" id="piña" name="piña" min="0" max="5" value="2">
+                    <label for="salsa">Cantidad de Salsa de picante:</label>
+                    <input type="range" id="salsa" name="salsa" min="0" max="5" value="2">
+                    <button type="button" id="preview-button">Vista Previa</button>
+                </form>
+            </div>
+            <div id="pedido-final" class="hidden">
+                <h2>Pedido Finalizado</h2>
+                <p id="pedido-detalle"></p>
+            </div>
+        </section>
+       
+        <script src="personalizar.js"></script>
+    </div>
+
+</body>
+</html>
